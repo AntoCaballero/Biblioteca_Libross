@@ -73,7 +73,7 @@ El sistema permite:
 
 El proyecto cuenta con una API RESTful desarrollada con Django REST Framework. A continuación se describen los principales endpoints y cómo usarlos.
 
-### 📘 Libros
+#### 📘 Libros
   - GET /api/libros/
     Retorna el listado completo de libros registrados. Requiere autenticación.
 
@@ -93,7 +93,7 @@ El proyecto cuenta con una API RESTful desarrollada con Django REST Framework. A
   - GET /api/libros/{id}/
     Muestra los detalles de un libro específico.
 
-### 👤 Usuarios
+#### 👤 Usuarios
   - POST /api/usuarios/registro/
     Registra un nuevo usuario.
 
@@ -109,7 +109,7 @@ El proyecto cuenta con una API RESTful desarrollada con Django REST Framework. A
       "username": "usuario1",
       "password": "contraseña123"
     }
-### ⭐ Puntuaciones
+#### ⭐ Puntuaciones
   - POST /api/puntuar/
     Permite calificar un libro ya existente. Requiere autenticación.son
 
