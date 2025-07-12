@@ -1,8 +1,8 @@
-📚 Biblioteca Libros
+# 📚 Biblioteca Libros
 
 Aplicación web desarrollada con Django y PostgreSQL que permite registrar, listar, puntuar, comentar y analizar libros. Pensado tanto para usuarios lectores como para desarrolladores que quieran explorar un backend API RESTful con autenticación por token y visualizaciones automatizadas.
 
-🛠️ Tecnologías utilizadas
+## 🛠️ Tecnologías utilizadas
 
   - Python 3.11.9
 
@@ -18,25 +18,25 @@ Aplicación web desarrollada con Django y PostgreSQL que permite registrar, list
 
   - Pillow, NumPy, psycopg2
 
-⚙️ Instalación del proyecto
+## ⚙️ Instalación del proyecto
 
-1. Crear y activar entorno virtual
+### 1. Crear y activar entorno virtual
 
 python -m venv env
 env\Scripts\activate       # En Windows
 
-2. Instalar Django y crear proyecto
+### 2. Instalar Django y crear proyecto
 
 pip install django djangorestframework pandas scikit-learn matplotlib seaborn psycopg2 pillow
 django-admin startproject promedio_libros
 cd promedio_libros
 python manage.py startapp libros
 
-3. Instalar dependencias adicionales (opcional)
+### 3. Instalar dependencias adicionales (opcional)
 
 pip install djangorestframework-simplejwt numpy
 
-4. Configurar la base de datos (PostgreSQL)
+### 4. Configurar la base de datos (PostgreSQL)
 
 Crear una base de datos en PostgreSQL y actualizar settings.py:
 
@@ -51,16 +51,16 @@ DATABASES = {
     }
 }
 
-5. Migraciones
+### 5. Migraciones
 
 python manage.py makemigrations
 python manage.py migrate
 
-6. Correr el servidor
+### 6. Correr el servidor
 
 python manage.py runserver
 
-7. ¿Cómo funciona el programa?
+### 7. ¿Cómo funciona el programa?
 
 El sistema permite:
 
@@ -69,11 +69,11 @@ El sistema permite:
   - Analizar visualmente los datos: promedios, cantidades, usuarios más activos, etc.
   - Utilizar autenticación JWT y permisos según usuario.
 
-8. API REST
+### 8. API REST
 
 El proyecto cuenta con una API RESTful desarrollada con Django REST Framework. A continuación se describen los principales endpoints y cómo usarlos.
 
-📘 Libros
+### 📘 Libros
   - GET /api/libros/
     Retorna el listado completo de libros registrados. Requiere autenticación.
 
@@ -93,7 +93,7 @@ El proyecto cuenta con una API RESTful desarrollada con Django REST Framework. A
   - GET /api/libros/{id}/
     Muestra los detalles de un libro específico.
 
-👤 Usuarios
+### 👤 Usuarios
   - POST /api/usuarios/registro/
     Registra un nuevo usuario.
 
@@ -109,7 +109,7 @@ El proyecto cuenta con una API RESTful desarrollada con Django REST Framework. A
       "username": "usuario1",
       "password": "contraseña123"
     }
-⭐ Puntuaciones
+### ⭐ Puntuaciones
   - POST /api/puntuar/
     Permite calificar un libro ya existente. Requiere autenticación.son
 
@@ -122,7 +122,7 @@ El proyecto cuenta con una API RESTful desarrollada con Django REST Framework. A
   - GET /api/puntuaciones/
     Listado de todas las puntuaciones registradas.
 
-9. 📊 Estadísticas y visualizaciones
+### 9. 📊 Estadísticas y visualizaciones
 
 Generación automática de gráficos accesibles desde el navegador:
 
@@ -133,7 +133,7 @@ Generación automática de gráficos accesibles desde el navegador:
 ![Gráfico](http://127.0.0.1:8000/promedios/promedio-puntuaciones-libro/)
 
 
-10. 🧪 Pruebas con Postman
+### 10. 🧪 Pruebas con Postman
 
 Podés utilizar Postman o cualquier herramienta REST para:
 
@@ -145,7 +145,7 @@ Podés utilizar Postman o cualquier herramienta REST para:
 
   - Consultar visualizaciones desde los endpoints
 
-11. 📄 Licencias
+### 11. 📄 Licencias
 Este proyecto utiliza herramientas y librerías con licencias open source:
 
   - Django: BSD License
