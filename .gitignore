@@ -1,0 +1,20 @@
+# Ignora la carpeta del entorno virtual de Python (no se sube porque se genera localmente)
+venv/
+
+# Ignora las carpetas generadas por Python al compilar (archivos temporales)
+__pycache__/
+
+# Ignora archivos de bytecode de Python
+*.pyc
+
+# Ignora la base de datos local de desarrollo
+db.sqlite3
+
+# Ignora archivos con variables de entorno sensibles (API keys, contraseñas, etc.)
+.env
+
+# Ignora archivos de logs del sistema
+*.log
+
+# Ignora archivos subidos por el usuario (imágenes, PDFs, etc.)
+media/
