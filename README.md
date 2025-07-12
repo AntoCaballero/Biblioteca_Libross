@@ -39,7 +39,7 @@ pip install djangorestframework-simplejwt numpy
 ### 4. Configurar la base de datos (PostgreSQL)
 
 Crear una base de datos en PostgreSQL y actualizar settings.py:
-
+```json
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -49,7 +49,7 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '5432',
     }
-}
+}```
 
 ### 5. Migraciones
 
