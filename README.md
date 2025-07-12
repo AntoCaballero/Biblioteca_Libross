@@ -81,7 +81,7 @@ El proyecto cuenta con una API RESTful desarrollada con Django REST Framework. A
     Permite registrar un nuevo libro. Requiere autenticación.
 
     Ejemplo de JSON:
-
+    ```json
     {
       "titulo": "Yo antes de ti",
       "fecha_lanzamiento": "2012-01-05",
@@ -89,6 +89,7 @@ El proyecto cuenta con una API RESTful desarrollada con Django REST Framework. A
       "autor": 49,
       "book_url": "https://drive.google.com/file/d/10DTzqjNR24t4sFdyldEdO6AxJqxSrQkv"
     }
+    ```
 
   - GET /api/libros/{id}/
     Muestra los detalles de un libro específico.
